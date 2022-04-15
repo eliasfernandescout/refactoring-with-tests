@@ -1,0 +1,17 @@
+{
+  "name": "refactoring-with-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculate.tst.js",
+  "scripts": {
+    "test": "jest --verbose",
+      "test-watch": "jest --watch-all",
+      "coverage": "jest --coverage"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
