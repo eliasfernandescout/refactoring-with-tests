@@ -5,7 +5,7 @@ test('Deve calcular o valor de uma corrida de taxi em dias normais', () => {
     const distante = 1000;
     const date = new Date('2021-07-10T10:00:00')
     //when
-    const price = calculate1.calc(distante, date);
+    const price = calculate1.calculateRide(distante, date);
     //then
     expect(price).toBe(2100);
     
@@ -16,7 +16,7 @@ test('Deve calcular o valor de uma corrida de taxi a noite', () => {
     const distante = 1000;
     const date = new Date('2021-07-10T23:00:00')
     //when
-    const price = calculate1.calc(distante, date);
+    const price = calculate1.calculateRide(distante, date);
     //then
     expect(price).toBe(3900);
     
@@ -27,7 +27,7 @@ test('Deve calcular o valor de uma corrida de taxi no domingo', () => {
     const distante = 1000;
     const date = new Date('2021-07-11T23:00:00')
     //when
-    const price = calculate1.calc(distante, date);
+    const price = calculate1.calculateRide(distante, date);
     //then
     expect(price).toBe(3900);
     
